@@ -1,7 +1,7 @@
 Ionic 1 App CRUD-PHP Base
 ==============
 
-Um projeto Ionic 1 Padrão com uma base de CRUD usando PHP.
+Um projeto Ionic 1 Base com um CRUD usando PHP.
 
 ## Usando esse projeto
 
