@@ -1,0 +1,57 @@
+<ion-view view-title="Home">
+  <!-- Header -->
+  <div class="bar bar-header bar-positive">
+    <h1 class="title">Home</h1>
+  </div>
+  <!-- Conteúdo do App -->
+  <ion-content has-subheader="false" style="margin-top: 20%">
+    <div ng-if="!usuarios" align="center">
+      <ion-spinner icon="spiral"></ion-spinner>
+    </div>
+    <ion-list ng-repeat="usuario in usuarios"><!-- Cria a repetição de todos usuarios($scope.usuarios) como um usuario -->
+      <ion-item>
+        <h3 style="color: gray" align="center">{{'Email: ' + usuario.email}}</h3><!-- {{interpolação}} referencia o Escopo($scope.usuarios) -->
+        <div class="row">
+          <div class="col col-50">
+            <button class="button button-outline button-small button-block button-positive" ng-click="abrirAlterarUsuario({{usuario.id}})">Alterar</button>
+          </div>
+          <div class="col col-50">
+            <button class="button button-outline button-small button-block button-assertive" ng-click="excluirUsuario({{usuario.id}})">Excluir</button>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <!-- Footer -->
+  <div class="bar bar-footer bar-stable">
+    <h1 ng-click="logout()" class="title">Logout</h1>
+  </div>
+  <!-- Script do Modal -->
+  <script id="alterarUsuario.html" type="text/ng-template">
+    <ion-modal-view>
+      <div class="bar bar-header bar-positive">
+        <h1 class="title">Alterar Usuário {{usuario.id}}</h1>
+      </div>
+      <ion-content style="margin-top: 20%">
+        <form name="alterar" ng-submit="alterarUsuario()">
+          <label class="item item-input item-floating-label">
+            <span class="input-label">Email</span>
+            <input type="email" ng-model="usuario.email" placeholder="Digite seu Email" required>
+          </label>
+          <div class="row">
+            <div class="col col-50">
+              <button type="submit" class="button button-outline button-block button-balanced" ng-disabled="alterar.$invalid">Alterar</button>
+            </div>
+            <div class="col col-50">
+              <a ng-click="closeAlterarModal()" class="button button-outline button-block button-stable">Voltar</a>
+            </div>
+          </div>
+        </form>
+      </ion-content>
+      <div class="bar bar-footer bar-stable">
+        <h1 ng-click="closeAlterarModal()" class="title">Sair</h1>
+      </div>
+    </ion-modal-view>
+  </script>
+  <!-- Fim do Modal -->
+</ion-view>

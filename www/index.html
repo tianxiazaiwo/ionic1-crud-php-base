@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
 
-    <link rel="manifest" href="manifest.json">
-
-    <!-- un-comment this code to enable service worker
+<head>
+  <!-- Coisas padrões de HTML -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+  <!-- Configurações do APP ao ser Compilado -->
+  <link rel="manifest" href="manifest.json">
+  <!-- "Descomente" as linhas abaixo para ligar o Serviço do IONIC (desnecessário na maioria das vezes)
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('service-worker.js')
@@ -15,31 +16,21 @@
           .catch(err => console.log('Error', err));
       }
     </script>-->
+  <!-- Biblioteca CSS Ionic (NÃO APAGUE SE NÃO OS ESTILOS IONIC NÃO IRÃO FUNCIONAR) -->
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <!-- CSS vazio pré-preparado (coloque seus comandos css nele para ser um CSS Global) -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <!-- Cordova (O que faz funcionar o app no celular) [durante desenvolvimento vai ser considerado error 404] -->
+  <script src="cordova.js"></script>
+  <!-- Seu app inicial -->
+  <script src="js/app.js"></script>
+  <!-- Aqui você adiciona novos controllers/configs(routers) e etc -->
+</head>
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+<body ng-app="appCRUD">
+  <ion-nav-view></ion-nav-view>
+</body>
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
-
-    <!-- ionic/angularjs js -->
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
-
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
-
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
-  </head>
-  <body ng-app="starter">
-
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
-      <ion-content>
-      </ion-content>
-    </ion-pane>
-  </body>
 </html>

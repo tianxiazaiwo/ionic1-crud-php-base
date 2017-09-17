@@ -1,0 +1,25 @@
+<ion-view view-title="Cadastro">
+  <div class="bar bar-header bar-positive">
+    <h1 class="title">Cadastro</h1>
+  </div>
+  <ion-content has-subheader="false" style="margin-top: 20%">
+    <form name="cadastro" ng-submit="cadastrarUsuario()">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Email</span>
+        <input type="email" ng-model="user_email" placeholder="Digite seu Email" required>
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Senha</span>
+        <input type="password" ng-model="user_senha" placeholder="Digite sua Senha" required>
+      </label>
+      <div class="row">
+        <div class="col col-50">
+          <button type="submit" class="button button-outline button-block button-balanced" ng-disabled="cadastro.$invalid">Cadastrar</button>
+        </div>
+        <div class="col col-50">
+          <a href="#/login" class="button button-outline button-block button-stable">Voltar</a>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
