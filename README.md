@@ -8,7 +8,7 @@ Um projeto Ionic 1 Padrão com uma base de CRUD usando PHP.
 É necessário possuir o GIT e Node JS para instalar o Cordova e o Ionic globalmente no seu computador.
 
 ```Usando o GIT BASH
-npm install -g ionic cordova ionic
+npm install -g ionic cordova
 ```
 
 ## Após isso:
