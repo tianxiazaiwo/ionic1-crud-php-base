@@ -1,26 +1,28 @@
-Ionic App Base
+Ionic 1 App CRUD-PHP Base
 ==============
 
-A starting project for Ionic that optionally supports using custom SCSS.
+Um projeto Ionic 1 Padrão com uma base de CRUD usando PHP.
 
-## Using this project
+## Usando esse projeto
 
-We recommend using the [Ionic CLI](https://github.com/ionic-team/ionic-cli) to create new Ionic projects that are based on this project but use a ready-made starter template.
+É necessário possuir o GIT e Node JS para instalar o Cordova e o Ionic globalmente no seu computador.
 
-For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
-
-```bash
-$ npm install -g ionic cordova
+```Usando o GIT BASH
+$ npm install -g ionic cordova ionic
 ```
 
-Then run:
+Após isso:
 
-```bash
-$ ionic start myProject tabs --type=ionic1
+```Usando o GIT BASH
+git clone 
+```
+```Entre na pasta do projeto
+cd CRUD_PHP
+```
+```Depois disso dê um npm install para instalas as bibliotecas necessárias
+npm install
 ```
 
-More info on this can be found on the Ionic [Getting Started](https://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/ionic-team/ionic-cli) repo.
-
-## Issues
-
-Issues have been disabled on this repo. If you do find an issue or have a question, consider posting it on the [Ionic Forum](https://forum.ionicframework.com/). If there is truly an error, follow our guidelines for [submitting an issue](https://ionicframework.com/submit-issue/) to the main Ionic repository.
+```Após isso inicie seu servidor
+ionic serve
+```
