@@ -19,7 +19,7 @@ git clone https://github.com/vazgabriel/ionic1-crud-php-base.git
 ```
 ## Entre na pasta
 ```Entre na pasta do projeto
-cd CRUD_PHP
+cd ionic1-crud-php-base
 ```
 ## Instale as bibliotecas
 ```Depois disso dê um npm install para instalas as bibliotecas necessárias
