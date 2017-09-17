@@ -15,7 +15,7 @@ $ npm install -g ionic cordova ionic
 
 ## Dê um GIT Clone
 ```Usando o GIT BASH
-https://github.com/vazgabriel/ionic1-crud-php-base.git
+git clone https://github.com/vazgabriel/ionic1-crud-php-base.git
 ```
 ## Entre na pasta
 ```Entre na pasta do projeto
