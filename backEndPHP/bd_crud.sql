@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS bd_crud;
+
 CREATE DATABASE bd_crud;
 
 USE bd_crud;
@@ -7,7 +9,7 @@ CREATE TABLE tbl_usuario (
   email varchar(100) NOT NULL UNIQUE,
   senha varchar(100) NOT NULL,
   data_criacao timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY(id);
+  PRIMARY KEY(id)
 );
 
 INSERT INTO tbl_usuario (email, senha) VALUES('teste@teste.com', 'teste');
