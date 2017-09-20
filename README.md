@@ -3,6 +3,20 @@ Ionic 1 App CRUD-PHP Base
 
 Um projeto Ionic 1 Base com um CRUD usando PHP.
 
+## Criação do PROJETO
+
+O projeto foi criado em tempo real em vídeo, dividido em duas partes que podem ser acessadas no youtube
+
+Parte 1:
+```Youtube
+https://www.youtube.com/watch?v=Xt1J8XwXayQ
+```
+
+Parte 2:
+```Youtube
+https://www.youtube.com/watch?v=ogc4ERegSrw
+```
+
 ## Usando esse projeto
 
 É necessário possuir o GIT e Node JS para instalar o Cordova e o Ionic globalmente no seu computador.
